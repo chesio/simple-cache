@@ -25,6 +25,11 @@ function sc_cache( $buffer, $flags ) {
 		return $buffer;
 	}
 
+	// Don't cache requests with non-empty query string
+	if ( ! empty( $_SERVER['QUERY_STRING'] ) ) {
+		return $buffer;
+	}
+
 	// Set the permission constants if not already set.
 	// Normally, this is taken care of in WP_Filesystem constructor, but it is
 	// not invoked here, because WP_Filesystem_Direct is instantiated directly.
