@@ -20,8 +20,8 @@ function sc_cache( $buffer, $flags ) {
 		return $buffer;
 	}
 
-	// Don't cache search, 404, or password protected
-	if ( is_404() || is_search() || post_password_required() ) {
+	// Don't cache 404, feed, search or password protected
+	if ( is_404() || is_feed() || is_search() || post_password_required() ) {
 		return $buffer;
 	}
 
