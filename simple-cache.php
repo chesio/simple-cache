@@ -4,15 +4,18 @@
  * Plugin URI: http://taylorlovett.com
  * Description: A simple caching plugin that just works.
  * Author: Taylor Lovett
- * Version: 1.6.2
+ * Version: 1.6.2.pl
  * Text Domain: simple-cache
  * Domain Path: /languages
  * Author URI: http://taylorlovett.com
+ *
+ * GitHub Plugin URI: https://github.com/chesio/simple-cache
+ * GitHub Branch: bluechip
  */
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'SC_VERSION', '1.6.2' );
+define( 'SC_VERSION', '1.6.2.pl' );
 
 require_once dirname( __FILE__ ) . '/inc/functions.php';
 require_once dirname( __FILE__ ) . '/inc/class-sc-settings.php';
